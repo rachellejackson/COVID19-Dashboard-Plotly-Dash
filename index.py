@@ -67,8 +67,8 @@ dict_of_locations = covid_data_list.set_index('Country/Region')[['Lat', 'Long']]
 app = dash.Dash(__name__, meta_tags=[{"name": "viewport", "content": "width=device-width"}])
 
 app.layout = html.Div([
+    # FIRST ROW
     html.Div([
-        # FIRST ROW
         html.Div([
             html.Img(src=app.get_asset_url('corona-logo-1.jpg'),
                      id='corona-image',
@@ -80,7 +80,7 @@ app.layout = html.Div([
 
         html.Div([
             html.Div([
-                html.H3('Covid - 19', style={'margin-bottom': '0px', 'color': 'white'}),
+                html.H3('Covid - 19', style={'margin-bottom': '0px', 'color': 'white', 'fontSize': 50}),
                 html.H5('Track Covid - 19 Cases', style={'margin-bottom': '0px', 'color': 'white'})
             ])
 
